@@ -48,7 +48,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("♨Link Expired, Please Request Again ♻", show_alert=True)
+        await query.answer("♨Link Expired, Please Request Again♻", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)

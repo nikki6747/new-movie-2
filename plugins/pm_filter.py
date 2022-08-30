@@ -48,7 +48,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("♨Link Expired, Please Request Again♻", show_alert=True)
+        await query.answer("♨ Link Expired, Please Request Again ♻", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -89,9 +89,7 @@ async def next_page(bot, query):
         off_set = None
     else:
         off_set = offset - 10
-    if n_offset == 0:
-    buttons = [InlineKeyboardButton('❓How To Download❓', url='https://telegram.me/HEROFLiX/1020')]
-        btn.append(
+    btn.append(
             [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"📚 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
@@ -101,8 +99,6 @@ async def next_page(bot, query):
             [InlineKeyboardButton(f"📚 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
-    buttons =
-            [InlineKeyboardButton('❓How To Download❓', url='https://telegram.me/HEROFLiX/1020')]
         btn.append(
             [
                 InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
@@ -128,7 +124,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("♨Link Expired, Please Request Again ♻", show_alert=True)
+        return await query.answer("♨ Link Expired, Please Request Again ♻", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Checking for Movie in database...')
     k = await manual_filters(bot, query.message, text=movie)

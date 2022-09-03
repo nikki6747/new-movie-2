@@ -80,7 +80,7 @@ async def next_page(bot, query):
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
-            for file in files
+             for file in files
         ]
 
     if 0 < offset <= 10:
@@ -89,10 +89,18 @@ async def next_page(bot, query):
         off_set = None
     else:
         off_set = offset - 10
+
+    # How to Download button
+
+    btn.append(
+    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/HEROFLiX/1020"),]
+)
+
+
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+             InlineKeyboardButton(f"📚 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:

@@ -149,7 +149,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b><i>⚠ No Results, Please Follow Request Tips !!</i></b> \n <b><i>♀ Request Tips › [</i></b><a href="https://telegram.me/HEROFLiX/894"><b><i>Click Here</i></b></a><b><i>]</i></b>")
+            k = await query.message.edit("I couldn't find anything related to that. Check your spelling")
             await asyncio.sleep(10)
             await k.delete()
 
@@ -749,7 +749,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b><i>♨ No Results ❗\n ⚠ Please Follow Request Tips \n </i></b><a href="https://telegram.me/HEROFLiX/894"><b><i>🚨 Click Here For Tips 🚨</i></b></a>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -839,5 +839,3 @@ async def manual_filters(client, message, text=False):
                 except Exception as e:
                     logger.exception(e)
                 break
-    else:
-        return False

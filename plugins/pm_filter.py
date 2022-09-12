@@ -749,7 +749,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b><i>♨ No Results ❗Please Follow Request Tips</i></b> \n 🚨 Click Here For Tips 🚨, url="https://telegram.me/HEROFLiX/894")
+        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
         await k.delete()
         return

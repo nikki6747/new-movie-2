@@ -6,7 +6,7 @@ class script(object):
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: @TeenFire"""
     SOURCE_TXT = """<b>NOTE:</b>
-    <b>🔆 彡 [ @HEROFLiX ] 彡 🔆</b>
+    🔆 彡 [ @HEROFLiX ] 彡 🔆"""
     MANUELFILTER_TXT = """Help: <b>FILTERS »</b>
 
 » <b>Filter is A Feature Where Users can Set Automated Reply to a Specific Word</b>

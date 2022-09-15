@@ -41,14 +41,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("🔆Its Not For You \n 🔆ये तुम्हारे लिए नहीं है", show_alert=True)
+        return await query.answer("🔆 Its Not For You❗\n🔆 ये तुम्हारे लिए नहीं है❗", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("♨ Link Expired, Please Request Again ♻", show_alert=True)
+        await query.answer("❗Link Expired, Please Request Again ♻", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -139,7 +139,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("♨ Link Expired, Please Request Again ♻", show_alert=True)
+        return await query.answer("❗Link Expired, Please Request Again ♻", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Checking in database...')
     k = await manual_filters(bot, query.message, text=movie)
@@ -209,7 +209,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("🔆Its Not For You \n 🔆ये तुम्हारे लिए नहीं है", show_alert=True)
+                await query.answer("🔆 Its Not For You❗ \n🔆 ये तुम्हारे लिए नहीं है❗", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -347,7 +347,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('♨ File Does not Exist ♨')
+            return await query.answer('♨ File Does not Exist❗')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -378,7 +378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('I Sent The File To You Privately', show_alert=True)
+                await query.answer('I Sent The File To You Privately❗', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot !', show_alert=True)
         except PeerIdInvalid:
@@ -392,7 +392,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('♨ File Does not Exist ♨')
+            return await query.answer('♨ File Does not Exist❗')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -778,7 +778,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply(" <b><i>💥Please Select Correct Name👇</i></b> \n <i><b>💥कृपया सही नाम चुनें👇</i></b> ")
+        k = await msg.reply(" <b><i>⚠️ Please Select Correct Name👇</i></b> \n <i><b>⚠️ कृपया सही नाम चुनें👇</i></b> ")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -790,7 +790,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply(" <b><i>💥Please Select Correct Name 👇</i></b> \n <i><b>💥कृपया सही नाम चुनें 👇</i></b> ",
+    await msg.reply(" <b><i>⚠️ Please Select Correct Name 👇</i></b> \n <i><b>⚠️ कृपया सही नाम चुनें 👇</i></b> ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 

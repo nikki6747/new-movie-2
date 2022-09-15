@@ -1,16 +1,13 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙰𝙽𝚈 𝙼𝙾𝚅𝙸𝙴, 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙰𝙽𝙸𝙼𝙰𝚃𝙸𝙾𝙽 𝚎𝚝𝚌., 𝙴𝙽𝙹𝙾𝚈 🤩"""
+𝙸'𝙼 <a href=https://telegram.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙰𝙽𝚈 𝙼𝙾𝚅𝙸𝙴, 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙰𝙽𝙸𝙼𝙰𝚃𝙸𝙾𝙽 𝚎𝚝𝚌., 𝙴𝙽𝙹𝙾𝚈 🤩 \n━━━━━━━━━━━━━━━━━━━━━━━
+         <b>🔆 </b><b><i>彡 [ </i></b><b><i>@HEROFLiX</i></b> <i><b>] 彡</b> 🔆</i>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: @TeenFire"""
     SOURCE_TXT = """<b>NOTE:</b>
-- <b>Join & Get Any Movie or Series....</b>
-- <b>Group › https://t.me/HeroFlixGroup</b>
-
-<b>DEVS:</b>
-- <a href=https://t.me/HeroFlix>Team HeroFlix</a>"""
+    <b>🔆 </b><b><i>彡 [ </i></b><b><i>@HEROFLiX</i></b> <i><b>] 彡</b> 🔆</i>
     MANUELFILTER_TXT = """Help: <b>FILTERS »</b>
 
 » <b>Filter is A Feature Where Users can Set Automated Reply to a Specific Word</b>

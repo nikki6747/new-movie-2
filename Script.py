@@ -5,8 +5,7 @@ class script(object):
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: @TeenFire"""
-    SOURCE_TXT = """<b>NOTE:</b>
-    🔆 彡 [ @HEROFLiX ] 彡 🔆"""
+    SOURCE_TXT = """<b>🔆 彡 [ @HEROFLiX ] 彡 🔆</b>"""
     MANUELFILTER_TXT = """Help: <b>FILTERS »</b>
 
 » <b>Filter is A Feature Where Users can Set Automated Reply to a Specific Word</b>

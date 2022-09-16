@@ -780,7 +780,7 @@ async def advantage_spell_chok(msg):
     if not movielist:
         k = await msg.reply(" <b><i>❗Please Select Correct Name👇</i></b> \n <i><b>❗कृपया सही नाम चुनें👇</i></b> ")
         await asyncio.sleep(8)
-            await k.delete()
+        await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[

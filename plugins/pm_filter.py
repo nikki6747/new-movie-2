@@ -779,7 +779,7 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         k = await msg.reply(" <b><i>❗Please Select Correct Name👇</i></b> \n <i><b>❗कृपया सही नाम चुनें👇</i></b> ")
-        await asyncio.sleep(15)
+        await asyncio.sleep(8)
             await k.delete()
         return
     SPELL_CHECK[msg.id] = movielist

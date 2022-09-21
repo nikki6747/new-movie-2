@@ -29,10 +29,6 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 
-btn.append(
-    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/HEROFLiX/1020"),]
-)
-
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)

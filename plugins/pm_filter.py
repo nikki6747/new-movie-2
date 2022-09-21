@@ -26,15 +26,12 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
  
-   # How to Download button
-
-    btn.append(
-    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/HEROFLiX/1020"),]
-)
-
 BUTTONS = {}
 SPELL_CHECK = {}
 
+btn.append(
+    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/HEROFLiX/1020"),]
+)
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):

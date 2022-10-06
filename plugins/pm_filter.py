@@ -92,7 +92,7 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/HEROFLiX/1020"),]
+    [InlineKeyboardButton("‼️ How To Download ‼️", url="https://telegram.me/M2linksOfficial/27"),]
 )
 
 
@@ -148,7 +148,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b><i>⚠ No Results, Please Follow Request Tips !!</i></b> \n <b><i>♀ Request Tips › [</i></b><a href="https://t.me/HEROFLiX/894"><b><i>Click Here</i></b></a><b><i>]</i></b>')
+            k = await query.message.edit('<b><i>⚠ No Results, Please Check Spelling<i></b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -170,20 +170,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('🚩All Hail @HeroFlix ')
+                    return await query.answer('🚩All Hail @M2LINKS ')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('🚩All Hail @HeroFlix ')
+                return await query.answer('🚩All Hail @M2LINKS ')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('🚩All Hail @HeroFlix ')
+            return await query.answer('🚩All Hail @M2LINKS ')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -237,7 +237,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('🚩All Hail @HeroFlix ')
+        return await query.answer('🚩All Hail @M2LINKS ')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -258,7 +258,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('🚩All Hail @HeroFlix ')
+        return await query.answer('🚩All Hail @M2LINKS ')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -281,7 +281,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('🚩All Hail @HeroFlix ')
+        return await query.answer('🚩All Hail @M2LINKS ')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -299,7 +299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('🚩All Hail @HeroFlix ')
+        return await query.answer('🚩All Hail @M2LINKS ')
     elif query.data == "backcb":
         await query.answer()
 
@@ -310,7 +310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('🚩All Hail @HeroFlix ')
+            return await query.answer('🚩All Hail @M2LINKS ')
         buttons = []
         for groupid in groupids:
             try:
@@ -420,7 +420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Group ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/HeroFlix')
+            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/M2LINKS')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('🚩All Hail @HeroFlix ')
+        await query.answer('🚩All Hail @M2LINKS ')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -451,8 +451,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/HeroFlix'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('🤖 Updates', url='https://telegram.me/M2LINKS'),
+            InlineKeyboardButton('❤️ ᴏᴡɴᴇʀ', url='https://t.me/Prince_Star_Lord')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -578,7 +578,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('🚩All Hail @HeroFlix ')
+            return await query.answer('🚩All Hail @M2LINKS ')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -625,7 +625,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('🚩All Hail @HeroFlix ')
+    await query.answer('🚩All Hail @M2LINKS ')
 
 
 async def auto_filter(client, msg, spoll=False):

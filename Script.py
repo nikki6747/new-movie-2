@@ -1,11 +1,11 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙸'𝙼 <a href=https://telegram.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙰𝙽𝚈 𝙼𝙾𝚅𝙸𝙴, 𝚂𝙴𝚁𝙸𝙴𝚂, 𝙰𝙽𝙸𝙼𝙰𝚃𝙸𝙾𝙽 𝚎𝚝𝚌., 𝙴𝙽𝙹𝙾𝚈 🤩 \n ━━━━━━━━━━━━━━━━━━━━━━ \n         <b>🔆 彡 [ @HEROFLiX ] 彡 🔆</b>"""
+    START_TXT = """<b>𝙷𝙴𝙻𝙾 {},
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍</b>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: @TeenFire"""
-    SOURCE_TXT = """<b>🔆 彡 [ @HEROFLiX ] 彡 🔆</b>"""
+    ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}</b>
+<b>✯ UPDATES: @M2LINKS</b>"""
+    SOURCE_TXT = """<b>🔆 彡 [ @M2LINKS ] 彡 🔆</b>"""
     MANUELFILTER_TXT = """Help: <b>FILTERS »</b>
 
 » <b>Filter is A Feature Where Users can Set Automated Reply to a Specific Word</b>
@@ -30,13 +30,13 @@ class script(object):
 3. <i>Buttons should be properly parsed as markdown format</i>
 
 <b>URL Buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/HeroFlixbot)</code>
+<code>[Button Text](buttonurl:https://t.me/M2links)</code>
 
 <b>Alert Buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """Help: <b>AUTO FILTER »</b>
 
-Add Me In Your Group as Admin & I Will Provide Any Movie, Series, Animation etc.,"""
+𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
